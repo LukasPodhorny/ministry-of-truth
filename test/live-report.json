@@ -1,0 +1,2521 @@
+{
+ "date": "2026-10-05T18:25:14.764Z",
+ "model": "jev-1.13.0",
+ "usage": {
+  "input_tokens": 118020,
+  "output_tokens": 16135
+ },
+ "fixtures": [
+  {
+   "id": "bridge-scapegoat-excellent",
+   "tier": "excellent",
+   "expectedStrategy": "scapegoat",
+   "live": {
+    "verdicts": {
+     "public": {
+      "affect": 0.55,
+      "credibility": 0.45,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.6,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.06,
+       0.06,
+       0.03
+      ]
+     },
+     "press": {
+      "affect": 0.25,
+      "credibility": 0.35,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.9,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.12,
+       0.04,
+       0.07
+      ]
+     },
+     "military": {
+      "affect": 0.45,
+      "credibility": 0.25,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.65,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.07,
+       0.13,
+       0.1
+      ]
+     },
+     "elite": {
+      "affect": 0.2,
+      "credibility": 0.2,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.8,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.07,
+       0.23,
+       0.06
+      ]
+     },
+     "foreign": {
+      "affect": 0.35,
+      "credibility": 0.35,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.8,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.03,
+       0.03
+      ]
+     }
+    },
+    "tone": "technocratic",
+    "strategy": "scapegoat",
+    "approval": {
+     "sum": 9,
+     "per": {
+      "public": 2,
+      "press": 2,
+      "military": 2,
+      "elite": 1,
+      "foreign": 2
+     }
+    }
+   },
+   "mock": {
+    "verdicts": {
+     "public": {
+      "affect": 0.7,
+      "credibility": 0.75,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "tragic_accident",
+      "salience": 0.3,
+      "tone": "reassuring",
+      "reasons": [
+       "Label Worship: header earns unearned credit (+0.08 cred)",
+       "Big numbers impress the Public (+0.05 aff)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Grief Shield: mourning buys one quiet cycle (−0.15 sal)",
+       "Scapegoat named (Inspector R. Duna): the hunger eases (+aff, +cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": [
+       "label_worship",
+       "grief_shield",
+       "scapegoat_saturation"
+      ]
+     },
+     "press": {
+      "affect": 0.55,
+      "credibility": 0.3,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "tragic_accident",
+      "salience": 0.65,
+      "tone": "reassuring",
+      "reasons": [
+       "Label Worship: header earns unearned credit (+0.08 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "“Mistakes Were Made” detector: 3 agentless passive(s) on S4 (−cred)",
+       "Scapegoat Saturation: a named head partially satisfies (+cred)",
+       "No casualty figure on a casualty incident (−cred, +sal)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": [
+       "label_worship",
+       "scapegoat_saturation"
+      ]
+     },
+     "military": {
+      "affect": 0.55,
+      "credibility": 0.7,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "tragic_accident",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Label Worship: header earns unearned credit (+0.08 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Fallen honored by name (+0.04 aff)",
+       "Passive Absolution: agentless verbs shield the uniform (+0.05 cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": [
+       "label_worship",
+       "passive_absolution"
+      ]
+     },
+     "elite": {
+      "affect": 0.5,
+      "credibility": 0.7,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "tragic_accident",
+      "salience": 0.4,
+      "tone": "reassuring",
+      "reasons": [
+       "Label Worship: header earns unearned credit (+0.08 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Passive Absolution: no agent, no liability (+0.04 cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": [
+       "label_worship",
+       "passive_absolution"
+      ]
+     },
+     "foreign": {
+      "affect": 0.55,
+      "credibility": 0.65,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "tragic_accident",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Label Worship: header earns unearned credit (+0.08 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Grief Shield acknowledged abroad (+0.05 aff)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": [
+       "label_worship",
+       "grief_shield"
+      ]
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "scapegoat",
+    "approval": {
+     "sum": 5,
+     "per": {
+      "public": 2,
+      "press": 1,
+      "military": 1,
+      "elite": 0,
+      "foreign": 1
+     }
+    }
+   }
+  },
+  {
+   "id": "bridge-transparency-good",
+   "tier": "good",
+   "expectedStrategy": "transparency",
+   "live": {
+    "verdicts": {
+     "public": {
+      "affect": 0.25,
+      "credibility": 0.3,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.7,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.06,
+       0.05,
+       0.04
+      ]
+     },
+     "press": {
+      "affect": 0.5,
+      "credibility": 0.35,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.95,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.1,
+       0.03,
+       0.07
+      ]
+     },
+     "military": {
+      "affect": 0.2,
+      "credibility": 0.15,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.7,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.06,
+       0.08,
+       0.07
+      ]
+     },
+     "elite": {
+      "affect": 0.15,
+      "credibility": 0.2,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.9,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.05,
+       0.04,
+       0.05
+      ]
+     },
+     "foreign": {
+      "affect": 0.65,
+      "credibility": 0.5,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.85,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.02,
+       0.02
+      ]
+     }
+    },
+    "tone": "absurd",
+    "strategy": "transparency",
+    "approval": {
+     "sum": 8,
+     "per": {
+      "public": -2,
+      "press": 5,
+      "military": -1,
+      "elite": 0,
+      "foreign": 6
+     }
+    }
+   },
+   "mock": {
+    "verdicts": {
+     "public": {
+      "affect": 0.55,
+      "credibility": 0.75,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.3,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×2 (+0.10 cred)",
+       "Big numbers impress the Public (+0.05 aff)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Grief Shield: mourning buys one quiet cycle (−0.15 sal)",
+       "An honest-ish answer: respected, not enjoyed (−aff, +cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": [
+       "grief_shield"
+      ]
+     },
+     "press": {
+      "affect": 0.55,
+      "credibility": 0.9,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.6,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×2 (+0.24 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Admission with particulars: grudging respect (+0.10 cred)",
+       "Stated a casualty number (+0.06 cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     },
+     "military": {
+      "affect": 0.5,
+      "credibility": 0.65,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×2 (+0.10 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Fallen honored by name (+0.04 aff)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     },
+     "elite": {
+      "affect": 0.45,
+      "credibility": 0.65,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.4,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×2 (+0.10 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Market-spook words (audit) (−aff, −cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     },
+     "foreign": {
+      "affect": 0.6,
+      "credibility": 0.8,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×2 (+0.20 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "A confession with particulars: noted with approval (+aff, +cred)",
+       "Grief Shield acknowledged abroad (+0.05 aff)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": [
+       "grief_shield"
+      ]
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "transparency",
+    "approval": {
+     "sum": 2,
+     "per": {
+      "public": 1,
+      "press": 1,
+      "military": 0,
+      "elite": -1,
+      "foreign": 1
+     }
+    }
+   }
+  },
+  {
+   "id": "mint-deflection-good",
+   "tier": "good",
+   "expectedStrategy": "deflection",
+   "live": {
+    "verdicts": {
+     "public": {
+      "affect": 0.65,
+      "credibility": 0.3,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.35,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.05,
+       0.03,
+       0.04
+      ]
+     },
+     "press": {
+      "affect": 0,
+      "credibility": 0.15,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.9,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.11,
+       0.11,
+       0.07
+      ]
+     },
+     "military": {
+      "affect": 0.45,
+      "credibility": 0.1,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.6,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.03,
+       0.03
+      ]
+     },
+     "elite": {
+      "affect": 0.2,
+      "credibility": 0.05,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.75,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.08,
+       0.04,
+       0.05
+      ]
+     },
+     "foreign": {
+      "affect": 0.25,
+      "credibility": 0.05,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.65,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.05,
+       0.04,
+       0.03
+      ]
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "deflection",
+    "approval": {
+     "sum": 1,
+     "per": {
+      "public": 2,
+      "press": -1,
+      "military": 1,
+      "elite": 0,
+      "foreign": -1
+     }
+    }
+   },
+   "mock": {
+    "verdicts": {
+     "public": {
+      "affect": 0.7,
+      "credibility": 0.5,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.35,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Deflection: attention bends elsewhere (−0.12 sal, for now)",
+       "Whatabout Gravity: blame bends abroad (+0.08 aff)",
+       "Tone “reassuring” clashes with a corruption (-0.05)"
+      ],
+      "quirks": [
+       "whatabout_gravity"
+      ]
+     },
+     "press": {
+      "affect": 0.5,
+      "credibility": 0.4,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.6,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Deflection: attention bends elsewhere (−0.12 sal, for now)",
+       "Whatabout: the Press loves a fight (+0.10 sal)",
+       "Tone “reassuring” clashes with a corruption (-0.05)"
+      ],
+      "quirks": []
+     },
+     "military": {
+      "affect": 0.5,
+      "credibility": 0.45,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.3,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Deflection: attention bends elsewhere (−0.12 sal, for now)",
+       "Tone “reassuring” clashes with a corruption (-0.05)"
+      ],
+      "quirks": []
+     },
+     "elite": {
+      "affect": 0.55,
+      "credibility": 0.5,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.3,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Deflection: attention bends elsewhere (−0.12 sal, for now)",
+       "Market-calming language (+0.06 aff)",
+       "Tone “reassuring” clashes with a corruption (-0.05)"
+      ],
+      "quirks": []
+     },
+     "foreign": {
+      "affect": 0.4,
+      "credibility": 0.55,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.3,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Deflection: attention bends elsewhere (−0.12 sal, for now)",
+       "Treaty Fog: procedure scores as compliance (+0.08 cred)",
+       "Strongman/whatabout posturing (−0.08 aff)",
+       "Tone “reassuring” clashes with a corruption (-0.05)"
+      ],
+      "quirks": [
+       "treaty_fog"
+      ]
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "deflection",
+    "approval": {
+     "sum": 0,
+     "per": {
+      "public": 1,
+      "press": 0,
+      "military": 0,
+      "elite": 0,
+      "foreign": -1
+     }
+    }
+   }
+  },
+  {
+   "id": "anthem-denial-good",
+   "tier": "good",
+   "expectedStrategy": "denial",
+   "live": {
+    "verdicts": {
+     "public": {
+      "affect": 0.4,
+      "credibility": 0.2,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.3,
+      "tone": "defiant",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.05,
+       0.03
+      ]
+     },
+     "press": {
+      "affect": 0,
+      "credibility": 0.2,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.8,
+      "tone": "defiant",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NYN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.66,
+       0.88,
+       0.05
+      ]
+     },
+     "military": {
+      "affect": 0.45,
+      "credibility": 0.2,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.65,
+      "tone": "defiant",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.04,
+       0.04
+      ]
+     },
+     "elite": {
+      "affect": 0.25,
+      "credibility": 0.15,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.6,
+      "tone": "defiant",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.04,
+       0.04,
+       0.04
+      ]
+     },
+     "foreign": {
+      "affect": 0.15,
+      "credibility": 0.1,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.55,
+      "tone": "defiant",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.03,
+       0.03
+      ]
+     }
+    },
+    "tone": "defiant",
+    "strategy": "denial",
+    "approval": {
+     "sum": 0,
+     "per": {
+      "public": 0,
+      "press": 0,
+      "military": 1,
+      "elite": 1,
+      "foreign": -2
+     }
+    }
+   },
+   "mock": {
+    "verdicts": {
+     "public": {
+      "affect": 0.65,
+      "credibility": 0.5,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.5,
+      "tone": "reassuring",
+      "reasons": [
+       "Denial is loud: everyone leans in (+0.05 sal)",
+       "Blissful denial holds — no photos, no problem (+0.10 aff)"
+      ],
+      "quirks": []
+     },
+     "press": {
+      "affect": 0.5,
+      "credibility": 0.3,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.65,
+      "tone": "reassuring",
+      "reasons": [
+       "Denial is loud: everyone leans in (+0.05 sal)",
+       "Blanket denial: the clipping file opens (−0.10 cred)"
+      ],
+      "quirks": []
+     },
+     "military": {
+      "affect": 0.5,
+      "credibility": 0.5,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.5,
+      "tone": "reassuring",
+      "reasons": [
+       "Denial is loud: everyone leans in (+0.05 sal)"
+      ],
+      "quirks": []
+     },
+     "elite": {
+      "affect": 0.5,
+      "credibility": 0.5,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Denial is loud: everyone leans in (+0.05 sal)"
+      ],
+      "quirks": []
+     },
+     "foreign": {
+      "affect": 0.5,
+      "credibility": 0.45,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.5,
+      "tone": "reassuring",
+      "reasons": [
+       "Denial is loud: everyone leans in (+0.05 sal)"
+      ],
+      "quirks": []
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "denial",
+    "approval": {
+     "sum": 1,
+     "per": {
+      "public": 1,
+      "press": 0,
+      "military": 0,
+      "elite": 0,
+      "foreign": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "bridge-euphemism-good",
+   "tier": "good",
+   "expectedStrategy": "euphemism",
+   "live": {
+    "verdicts": {
+     "public": {
+      "affect": 0.3,
+      "credibility": 0.15,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.45,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.1,
+       0.05,
+       0.04
+      ]
+     },
+     "press": {
+      "affect": 0,
+      "credibility": 0.1,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.9,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.11,
+       0.09,
+       0.07
+      ]
+     },
+     "military": {
+      "affect": 0.3,
+      "credibility": 0.05,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.6,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.04,
+       0.04,
+       0.04
+      ]
+     },
+     "elite": {
+      "affect": 0.2,
+      "credibility": 0.05,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.9,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.05,
+       0.04,
+       0.05
+      ]
+     },
+     "foreign": {
+      "affect": 0.05,
+      "credibility": 0.1,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.75,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.03,
+       0.03
+      ]
+     }
+    },
+    "tone": "technocratic",
+    "strategy": "euphemism",
+    "approval": {
+     "sum": -4,
+     "per": {
+      "public": -1,
+      "press": -1,
+      "military": 0,
+      "elite": 1,
+      "foreign": -3
+     }
+    }
+   },
+   "mock": {
+    "verdicts": {
+     "public": {
+      "affect": 0.6,
+      "credibility": 0.7,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.45,
+      "tone": "technocratic",
+      "reasons": [
+       "Label Worship: header earns unearned credit (+0.08 cred)",
+       "Short and punchy: every word lands (+0.04 cred)"
+      ],
+      "quirks": [
+       "label_worship"
+      ]
+     },
+     "press": {
+      "affect": 0.5,
+      "credibility": 0.4,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.75,
+      "tone": "technocratic",
+      "reasons": [
+       "Label Worship: header earns unearned credit (+0.08 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Thesaurus detected: the Press keeps one too (−0.04 cred)",
+       "Treaty fog is suspicious up close (+0.08 sal)",
+       "No casualty figure on a casualty incident (−cred, +sal)"
+      ],
+      "quirks": [
+       "label_worship"
+      ]
+     },
+     "military": {
+      "affect": 0.5,
+      "credibility": 0.6,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.45,
+      "tone": "technocratic",
+      "reasons": [
+       "Label Worship: header earns unearned credit (+0.08 cred)",
+       "Short and punchy: every word lands (+0.04 cred)"
+      ],
+      "quirks": [
+       "label_worship"
+      ]
+     },
+     "elite": {
+      "affect": 0.55,
+      "credibility": 0.7,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.4,
+      "tone": "technocratic",
+      "reasons": [
+       "Label Worship: header earns unearned credit (+0.08 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Euphemism Laundering ×4: the Owners approve (+cred, +aff)"
+      ],
+      "quirks": [
+       "label_worship",
+       "euphemism_laundering"
+      ]
+     },
+     "foreign": {
+      "affect": 0.5,
+      "credibility": 0.65,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.45,
+      "tone": "technocratic",
+      "reasons": [
+       "Label Worship: header earns unearned credit (+0.08 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Treaty Fog: procedure scores as compliance (+0.08 cred)"
+      ],
+      "quirks": [
+       "label_worship",
+       "treaty_fog"
+      ]
+     }
+    },
+    "tone": "technocratic",
+    "strategy": "euphemism",
+    "approval": {
+     "sum": 2,
+     "per": {
+      "public": 1,
+      "press": 0,
+      "military": 0,
+      "elite": 1,
+      "foreign": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "ledger-spin-mediocre",
+   "tier": "mediocre",
+   "expectedStrategy": "spin",
+   "live": {
+    "verdicts": {
+     "public": {
+      "affect": 0.5,
+      "credibility": 0.3,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.4,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.02,
+       0.02
+      ]
+     },
+     "press": {
+      "affect": 0,
+      "credibility": 0.1,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.8,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.09,
+       0.15,
+       0.06
+      ]
+     },
+     "military": {
+      "affect": 0.5,
+      "credibility": 0.15,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.5,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.03,
+       0.03
+      ]
+     },
+     "elite": {
+      "affect": 0.25,
+      "credibility": 0.2,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.75,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.07,
+       0.03,
+       0.05
+      ]
+     },
+     "foreign": {
+      "affect": 0.25,
+      "credibility": 0.1,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.6,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.04,
+       0.03,
+       0.03
+      ]
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "spin",
+    "approval": {
+     "sum": 2,
+     "per": {
+      "public": 1,
+      "press": -1,
+      "military": 2,
+      "elite": 1,
+      "foreign": -1
+     }
+    }
+   },
+   "mock": {
+    "verdicts": {
+     "public": {
+      "affect": 0.55,
+      "credibility": 0.5,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Tone “reassuring” clashes with a corruption (-0.05)"
+      ],
+      "quirks": []
+     },
+     "press": {
+      "affect": 0.5,
+      "credibility": 0.4,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.6,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Tone “reassuring” clashes with a corruption (-0.05)"
+      ],
+      "quirks": []
+     },
+     "military": {
+      "affect": 0.5,
+      "credibility": 0.45,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Tone “reassuring” clashes with a corruption (-0.05)"
+      ],
+      "quirks": []
+     },
+     "elite": {
+      "affect": 0.5,
+      "credibility": 0.5,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.4,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Tone “reassuring” clashes with a corruption (-0.05)"
+      ],
+      "quirks": []
+     },
+     "foreign": {
+      "affect": 0.5,
+      "credibility": 0.45,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Tone “reassuring” clashes with a corruption (-0.05)"
+      ],
+      "quirks": []
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "spin",
+    "approval": {
+     "sum": 1,
+     "per": {
+      "public": 1,
+      "press": 0,
+      "military": 0,
+      "elite": 0,
+      "foreign": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "bridge-silence-bad",
+   "tier": "bad",
+   "expectedStrategy": "silence",
+   "live": {
+    "verdicts": {
+     "public": {
+      "affect": 0.25,
+      "credibility": 0.5,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.6,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.07,
+       0.05,
+       0.03
+      ]
+     },
+     "press": {
+      "affect": 0.1,
+      "credibility": 0.3,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.65,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.07,
+       0.04,
+       0.07
+      ]
+     },
+     "military": {
+      "affect": 0.35,
+      "credibility": 0.3,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.5,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.04,
+       0.04,
+       0.04
+      ]
+     },
+     "elite": {
+      "affect": 0.2,
+      "credibility": 0.1,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.7,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.05,
+       0.03,
+       0.04
+      ]
+     },
+     "foreign": {
+      "affect": 0.4,
+      "credibility": 0.35,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.7,
+      "tone": "technocratic",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.03,
+       0.03
+      ]
+     }
+    },
+    "tone": "technocratic",
+    "strategy": "silence",
+    "approval": {
+     "sum": -2,
+     "per": {
+      "public": -2,
+      "press": 0,
+      "military": 0,
+      "elite": 0,
+      "foreign": 0
+     }
+    }
+   },
+   "mock": {
+    "verdicts": {
+     "public": {
+      "affect": 0.5,
+      "credibility": 0.45,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.55,
+      "tone": "reassuring",
+      "reasons": [
+       "Dodge (“no comment” energy): suspicion grows in the quiet (−0.12 cred, +sal)",
+       "Stonewalling angers the Masses (−0.06 aff)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     },
+     "press": {
+      "affect": 0.5,
+      "credibility": 0.25,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.75,
+      "tone": "reassuring",
+      "reasons": [
+       "Dodge (“no comment” energy): suspicion grows in the quiet (−0.12 cred, +sal)",
+       "No casualty figure on a casualty incident (−cred, +sal)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     },
+     "military": {
+      "affect": 0.45,
+      "credibility": 0.4,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.5,
+      "tone": "reassuring",
+      "reasons": [
+       "Dodge (“no comment” energy): suspicion grows in the quiet (−0.12 cred, +sal)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     },
+     "elite": {
+      "affect": 0.5,
+      "credibility": 0.4,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.5,
+      "tone": "reassuring",
+      "reasons": [
+       "Dodge (“no comment” energy): suspicion grows in the quiet (−0.12 cred, +sal)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     },
+     "foreign": {
+      "affect": 0.5,
+      "credibility": 0.4,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.5,
+      "tone": "reassuring",
+      "reasons": [
+       "Dodge (“no comment” energy): suspicion grows in the quiet (−0.12 cred, +sal)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "silence",
+    "approval": {
+     "sum": -1,
+     "per": {
+      "public": 0,
+      "press": 0,
+      "military": -1,
+      "elite": 0,
+      "foreign": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "kars-blame-terrible",
+   "tier": "terrible",
+   "expectedStrategy": "scapegoat",
+   "live": {
+    "verdicts": {
+     "public": {
+      "affect": 0.6,
+      "credibility": 0.4,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.6,
+      "tone": "threatening",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.06,
+       0.07,
+       0.03
+      ]
+     },
+     "press": {
+      "affect": 0,
+      "credibility": 0.05,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.9,
+      "tone": "threatening",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNY)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.49,
+       0.06,
+       0.98
+      ]
+     },
+     "military": {
+      "affect": 0.3,
+      "credibility": 0,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.65,
+      "tone": "threatening",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.12,
+       0.18,
+       0.71
+      ]
+     },
+     "elite": {
+      "affect": 0.1,
+      "credibility": 0,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.9,
+      "tone": "threatening",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.1,
+       0.06,
+       0.07
+      ]
+     },
+     "foreign": {
+      "affect": 0,
+      "credibility": 0,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.75,
+      "tone": "threatening",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.06,
+       0.04,
+       0.08
+      ]
+     }
+    },
+    "tone": "threatening",
+    "strategy": "scapegoat",
+    "approval": {
+     "sum": -4,
+     "per": {
+      "public": 3,
+      "press": -2,
+      "military": 0,
+      "elite": -1,
+      "foreign": -4
+     }
+    }
+   },
+   "mock": {
+    "verdicts": {
+     "public": {
+      "affect": 0.6,
+      "credibility": 0.3,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "threatening",
+      "reasons": [
+       "Absurd figure (>100%): the plausibility filter caught it",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Scapegoat named (Postmaster E. Zima): the hunger eases (+aff, +cred)",
+       "Tone “threatening” clashes with a atrocity (-0.2)"
+      ],
+      "quirks": [
+       "scapegoat_saturation"
+      ]
+     },
+     "press": {
+      "affect": 0.55,
+      "credibility": 0.05,
+      "compliance": true,
+      "compWhy": "Prints a disprovable falsehood",
+      "fit": "competent_governance",
+      "salience": 0.65,
+      "tone": "threatening",
+      "reasons": [
+       "Absurd figure (>100%): the plausibility filter caught it",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Scapegoat Saturation: a named head partially satisfies (+cred)",
+       "Plain language earns grudging Press respect (+0.05 cred)",
+       "No casualty figure on a casualty incident (−cred, +sal)",
+       "Tone “threatening” clashes with a atrocity (-0.2)",
+       "RED LINE: Prints a disprovable falsehood"
+      ],
+      "quirks": [
+       "scapegoat_saturation"
+      ]
+     },
+     "military": {
+      "affect": 0.45,
+      "credibility": 0.2,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "threatening",
+      "reasons": [
+       "Absurd figure (>100%): the plausibility filter caught it",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Tone “threatening” clashes with a atrocity (-0.2)"
+      ],
+      "quirks": []
+     },
+     "elite": {
+      "affect": 0.45,
+      "credibility": 0.2,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.4,
+      "tone": "threatening",
+      "reasons": [
+       "Absurd figure (>100%): the plausibility filter caught it",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Plain severity words spook the Owners (−aff)",
+       "Tone “threatening” clashes with a atrocity (-0.2)"
+      ],
+      "quirks": []
+     },
+     "foreign": {
+      "affect": 0.4,
+      "credibility": 0.2,
+      "compliance": true,
+      "compWhy": "Unevidenced accusation / threat of force",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "threatening",
+      "reasons": [
+       "Absurd figure (>100%): the plausibility filter caught it",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Strongman/whatabout posturing (−0.08 aff)",
+       "Tone “threatening” clashes with a atrocity (-0.2)",
+       "RED LINE: Unevidenced accusation / threat of force"
+      ],
+      "quirks": []
+     }
+    },
+    "tone": "threatening",
+    "strategy": "scapegoat",
+    "approval": {
+     "sum": -15,
+     "per": {
+      "public": 1,
+      "press": -5,
+      "military": -1,
+      "elite": -1,
+      "foreign": -9
+     }
+    }
+   }
+  },
+  {
+   "id": "dam-transparency-good",
+   "tier": "good",
+   "expectedStrategy": "transparency",
+   "live": {
+    "verdicts": {
+     "public": {
+      "affect": 0.35,
+      "credibility": 0.35,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.04,
+       0.04,
+       0.03
+      ]
+     },
+     "press": {
+      "affect": 0.45,
+      "credibility": 0.3,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.8,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.19,
+       0.04,
+       0.06
+      ]
+     },
+     "military": {
+      "affect": 0.3,
+      "credibility": 0.2,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.6,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.04,
+       0.03
+      ]
+     },
+     "elite": {
+      "affect": 0.25,
+      "credibility": 0.3,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.8,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.05,
+       0.03,
+       0.04
+      ]
+     },
+     "foreign": {
+      "affect": 0.75,
+      "credibility": 0.5,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.6,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.03,
+       0.02
+      ]
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "transparency",
+    "approval": {
+     "sum": 11,
+     "per": {
+      "public": 0,
+      "press": 4,
+      "military": 0,
+      "elite": 1,
+      "foreign": 6
+     }
+    }
+   },
+   "mock": {
+    "verdicts": {
+     "public": {
+      "affect": 0.5,
+      "credibility": 0.75,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×2 (+0.10 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "An honest-ish answer: respected, not enjoyed (−aff, +cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     },
+     "press": {
+      "affect": 0.55,
+      "credibility": 0.8,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.6,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×2 (+0.24 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Admission with particulars: grudging respect (+0.10 cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     },
+     "military": {
+      "affect": 0.45,
+      "credibility": 0.65,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×2 (+0.10 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     },
+     "elite": {
+      "affect": 0.45,
+      "credibility": 0.65,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.4,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×2 (+0.10 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Market-spook words (audit) (−aff, −cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     },
+     "foreign": {
+      "affect": 0.55,
+      "credibility": 0.8,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×2 (+0.20 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "A confession with particulars: noted with approval (+aff, +cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": []
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "transparency",
+    "approval": {
+     "sum": 2,
+     "per": {
+      "public": 0,
+      "press": 1,
+      "military": 0,
+      "elite": 0,
+      "foreign": 1
+     }
+    }
+   }
+  },
+  {
+   "id": "border-deflection-mediocre",
+   "tier": "mediocre",
+   "expectedStrategy": "deflection",
+   "live": {
+    "verdicts": {
+     "public": {
+      "affect": 0.5,
+      "credibility": 0.15,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.35,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.03,
+       0.02
+      ]
+     },
+     "press": {
+      "affect": 0,
+      "credibility": 0.1,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.9,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.11,
+       0.17,
+       0.06
+      ]
+     },
+     "military": {
+      "affect": 0.5,
+      "credibility": 0.1,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.5,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.07,
+       0.05,
+       0.05
+      ]
+     },
+     "elite": {
+      "affect": 0.2,
+      "credibility": 0.05,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.75,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.04,
+       0.03,
+       0.04
+      ]
+     },
+     "foreign": {
+      "affect": 0.1,
+      "credibility": 0.05,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "routine_administration",
+      "salience": 0.65,
+      "tone": "reassuring",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.09,
+       0.08,
+       0.06
+      ]
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "deflection",
+    "approval": {
+     "sum": 2,
+     "per": {
+      "public": 2,
+      "press": -1,
+      "military": 3,
+      "elite": 1,
+      "foreign": -3
+     }
+    }
+   },
+   "mock": {
+    "verdicts": {
+     "public": {
+      "affect": 0.7,
+      "credibility": 0.65,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.35,
+      "tone": "technocratic",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Deflection: attention bends elsewhere (−0.12 sal, for now)",
+       "Whatabout Gravity: blame bends abroad (+0.08 aff)",
+       "Tone “technocratic” fits a foreign (+0.08)"
+      ],
+      "quirks": [
+       "whatabout_gravity"
+      ]
+     },
+     "press": {
+      "affect": 0.5,
+      "credibility": 0.45,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.75,
+      "tone": "technocratic",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Deflection: attention bends elsewhere (−0.12 sal, for now)",
+       "Whatabout: the Press loves a fight (+0.10 sal)",
+       "Treaty fog is suspicious up close (+0.08 sal)",
+       "No casualty figure on a casualty incident (−cred, +sal)",
+       "Tone “technocratic” fits a foreign (+0.08)"
+      ],
+      "quirks": []
+     },
+     "military": {
+      "affect": 0.55,
+      "credibility": 0.6,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.3,
+      "tone": "technocratic",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Deflection: attention bends elsewhere (−0.12 sal, for now)",
+       "Defiant posture: jaws nod (+0.05 aff)",
+       "Tone “technocratic” fits a foreign (+0.08)"
+      ],
+      "quirks": []
+     },
+     "elite": {
+      "affect": 0.55,
+      "credibility": 0.6,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.3,
+      "tone": "technocratic",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Deflection: attention bends elsewhere (−0.12 sal, for now)",
+       "Market-calming language (+0.06 aff)",
+       "Tone “technocratic” fits a foreign (+0.08)"
+      ],
+      "quirks": []
+     },
+     "foreign": {
+      "affect": 0.4,
+      "credibility": 0.65,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.3,
+      "tone": "technocratic",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Deflection: attention bends elsewhere (−0.12 sal, for now)",
+       "Treaty Fog: procedure scores as compliance (+0.08 cred)",
+       "Strongman/whatabout posturing (−0.08 aff)",
+       "Tone “technocratic” fits a foreign (+0.08)"
+      ],
+      "quirks": [
+       "treaty_fog"
+      ]
+     }
+    },
+    "tone": "technocratic",
+    "strategy": "deflection",
+    "approval": {
+     "sum": 3,
+     "per": {
+      "public": 2,
+      "press": 0,
+      "military": 1,
+      "elite": 1,
+      "foreign": -1
+     }
+    }
+   }
+  },
+  {
+   "id": "bridge-scapegoat-connected",
+   "tier": "risky",
+   "expectedStrategy": "scapegoat",
+   "live": {
+    "verdicts": {
+     "public": {
+      "affect": 0.45,
+      "credibility": 0.3,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.55,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.14,
+       0.06,
+       0.03
+      ]
+     },
+     "press": {
+      "affect": 0.05,
+      "credibility": 0.2,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.9,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.13,
+       0.05,
+       0.07
+      ]
+     },
+     "military": {
+      "affect": 0.35,
+      "credibility": 0.15,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.65,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.07,
+       0.1,
+       0.1
+      ]
+     },
+     "elite": {
+      "affect": 0.15,
+      "credibility": 0.1,
+      "compliance": true,
+      "compWhy": "Live red-line majority (Names an elite or threatens assets)",
+      "fit": "elite_betrayal",
+      "salience": 0.8,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots YNY)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.93,
+       0.43,
+       0.92
+      ]
+     },
+     "foreign": {
+      "affect": 0.2,
+      "credibility": 0.2,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "elite_betrayal",
+      "salience": 0.7,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.03,
+       0.03
+      ]
+     }
+    },
+    "tone": "absurd",
+    "strategy": "scapegoat",
+    "approval": {
+     "sum": -6,
+     "per": {
+      "public": 1,
+      "press": -1,
+      "military": 1,
+      "elite": -6,
+      "foreign": -1
+     }
+    }
+   },
+   "mock": {
+    "verdicts": {
+     "public": {
+      "affect": 0.65,
+      "credibility": 0.7,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "tragic_accident",
+      "salience": 0.3,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×1 (+0.05 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Grief Shield: mourning buys one quiet cycle (−0.15 sal)",
+       "Scapegoat named (Director K. Halda): the hunger eases (+aff, +cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": [
+       "grief_shield",
+       "scapegoat_saturation"
+      ]
+     },
+     "press": {
+      "affect": 0.55,
+      "credibility": 0.4,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "tragic_accident",
+      "salience": 0.65,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×1 (+0.12 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "“Mistakes Were Made” detector: 1 agentless passive(s) on S4 (−cred)",
+       "Scapegoat Saturation: a named head partially satisfies (+cred)",
+       "No casualty figure on a casualty incident (−cred, +sal)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": [
+       "scapegoat_saturation"
+      ]
+     },
+     "military": {
+      "affect": 0.55,
+      "credibility": 0.65,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "tragic_accident",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×1 (+0.05 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Fallen honored by name (+0.04 aff)",
+       "Passive Absolution: agentless verbs shield the uniform (+0.05 cred)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": [
+       "passive_absolution"
+      ]
+     },
+     "elite": {
+      "affect": 0.5,
+      "credibility": 0.65,
+      "compliance": true,
+      "compWhy": "Names an elite or threatens assets",
+      "fit": "tragic_accident",
+      "salience": 0.4,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×1 (+0.05 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Passive Absolution: no agent, no liability (+0.04 cred)",
+       "Tone “reassuring” fits a disaster (+0.05)",
+       "RED LINE: Names an elite or threatens assets"
+      ],
+      "quirks": [
+       "passive_absolution"
+      ]
+     },
+     "foreign": {
+      "affect": 0.55,
+      "credibility": 0.65,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "tragic_accident",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Cited evidence ×1 (+0.10 cred)",
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Grief Shield acknowledged abroad (+0.05 aff)",
+       "Tone “reassuring” fits a disaster (+0.05)"
+      ],
+      "quirks": [
+       "grief_shield"
+      ]
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "scapegoat",
+    "approval": {
+     "sum": -1,
+     "per": {
+      "public": 2,
+      "press": 1,
+      "military": 1,
+      "elite": -6,
+      "foreign": 1
+     }
+    }
+   }
+  },
+  {
+   "id": "zoo-spin-short",
+   "tier": "good",
+   "expectedStrategy": "spin",
+   "live": {
+    "verdicts": {
+     "public": {
+      "affect": 0.75,
+      "credibility": 0.35,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.55,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.04,
+       0.03,
+       0.03
+      ]
+     },
+     "press": {
+      "affect": 0,
+      "credibility": 0.1,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.85,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots YNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.76,
+       0.16,
+       0.07
+      ]
+     },
+     "military": {
+      "affect": 0.5,
+      "credibility": 0.1,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.6,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.03,
+       0.04,
+       0.03
+      ]
+     },
+     "elite": {
+      "affect": 0.3,
+      "credibility": 0.1,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.6,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.05,
+       0.04,
+       0.04
+      ]
+     },
+     "foreign": {
+      "affect": 0.15,
+      "credibility": 0.05,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "cover_up",
+      "salience": 0.6,
+      "tone": "absurd",
+      "reasons": [
+       "Live Jev verdict (compliance ballots NNN)"
+      ],
+      "quirks": [],
+      "ballots": [
+       0.04,
+       0.03,
+       0.03
+      ]
+     }
+    },
+    "tone": "absurd",
+    "strategy": "spin",
+    "approval": {
+     "sum": 2,
+     "per": {
+      "public": 3,
+      "press": -1,
+      "military": 1,
+      "elite": 1,
+      "foreign": -2
+     }
+    }
+   },
+   "mock": {
+    "verdicts": {
+     "public": {
+      "affect": 0.75,
+      "credibility": 0.55,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Big-Number Awe: precise figures mesmerize the Public (+0.10 aff)",
+       "Short and punchy: every word lands (+0.04 cred)"
+      ],
+      "quirks": [
+       "big_number_awe"
+      ]
+     },
+     "press": {
+      "affect": 0.5,
+      "credibility": 0.4,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.6,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)",
+       "Unsourced precise figure: the Press wants provenance (−0.05 cred)"
+      ],
+      "quirks": []
+     },
+     "military": {
+      "affect": 0.5,
+      "credibility": 0.5,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)"
+      ],
+      "quirks": []
+     },
+     "elite": {
+      "affect": 0.5,
+      "credibility": 0.55,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.4,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)"
+      ],
+      "quirks": []
+     },
+     "foreign": {
+      "affect": 0.5,
+      "credibility": 0.5,
+      "compliance": false,
+      "compWhy": "",
+      "fit": "competent_governance",
+      "salience": 0.45,
+      "tone": "reassuring",
+      "reasons": [
+       "Short and punchy: every word lands (+0.04 cred)"
+      ],
+      "quirks": []
+     }
+    },
+    "tone": "reassuring",
+    "strategy": "spin",
+    "approval": {
+     "sum": 2,
+     "per": {
+      "public": 2,
+      "press": 0,
+      "military": 0,
+      "elite": 0,
+      "foreign": 0
+     }
+    }
+   }
+  }
+ ]
+}

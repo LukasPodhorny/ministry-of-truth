@@ -1,0 +1,7 @@
+# Secrets — never commit (live Jev key lives here)
+.env
+
+# Dependencies / OS / logs
+node_modules/
+.DS_Store
+*.log

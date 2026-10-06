@@ -1,0 +1,12 @@
+{
+  "name": "ministry-of-truth",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Ministry of Truth — a spin doctor simulator. Draft cover stories, exploit the machine-minds that judge you, survive the regime.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "calibrate": "node scripts/calibrate.mjs"
+  },
+  "license": "UNLICENSED"
+}
